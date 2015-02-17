@@ -1,0 +1,62 @@
+<!--
+/**
+ * Extension
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ *
+ * DISCLAIMER
+ *
+ * This extension is developed for study purpose and it is tested on 
+ * Magento 1.9.1 version. You can find the source for this extension
+ * at http://magento.stackexchange.com/questions/54192/
+ * disabel-cache-in-cms-page-using-a-custom-module
+ *
+ * @category   Custom Extension
+ * @package    Rkt_CustomBlock
+ * @author     programmer_rkt
+ * @copyright  Copyright (c) 2015(http://www.rktinaction.com)
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+-->
+<!-- 
+/**
+ * Module Configuration File
+ */
+-->
+<config>
+    <modules>
+        <Rkt_CustomBlock>
+            <version>1.0.0</version>
+        </Rkt_CustomBlock>
+    </modules>
+    <frontend>
+        <routers>
+            <rkt_customblock>
+                <use>standard</use>
+                <args>
+                    <module>Rkt_CustomBlock</module>
+                    <frontName>helloworld</frontName>
+                </args>
+            </rkt_customblock>
+        </routers>
+        <layout>
+            <updates>
+                <rkt_customblock>
+                    <file>rkt_customblock.xml</file>
+                </rkt_customblock>
+            </updates>
+        </layout>
+    </frontend>
+    <global>
+        <blocks>
+            <rkt_customblock>
+                <class>Rkt_CustomBlock_Block</class>
+            </rkt_customblock>
+        </blocks>
+    </global>
+</config>
