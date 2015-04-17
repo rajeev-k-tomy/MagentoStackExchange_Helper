@@ -1,4 +1,4 @@
-# Flexible Head For Magento 
+# Flexible Head Block For Magento 
 
 ## Need of Flexible Head extension
 
