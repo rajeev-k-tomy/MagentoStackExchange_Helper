@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Rkt_RemoveCategoryTab extension
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the MIT License
+ * that is bundled with this package in the file LICENSE_RCH.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/mit-license.php
+ *
+ * @category       Rkt
+ * @package        Rkt_RemoveCategoryTab
+ * @copyright      Copyright (c) 2015   
+ * @license        http://opensource.org/licenses/mit-license.php MIT License
+ */
+-->
+<config>
+    <modules>
+        <Rkt_RemoveCategoryTab>
+            <version>1.0.0</version>
+        </Rkt_RemoveCategoryTab>
+    </modules>
+    <global>
+        <models>
+            <rkt_removecategorytab>
+                <class>Rkt_RemoveCategoryTab_Model</class>
+            </rkt_removecategorytab>
+        </models>
+    </global>
+    <adminhtml>
+        <events>
+            <adminhtml_catalog_category_tabs>
+                <observers>
+                    <remove_category_product_tab_from_edit_page>
+                        <class>rkt_removecategorytab/observer</class>
+                        <method>removeUnwantedCategoryTabs</method>
+                    </remove_category_product_tab_from_edit_page>
+                </observers>
+            </adminhtml_catalog_category_tabs>
+        </events>
+   </adminhtml>
+</config>
