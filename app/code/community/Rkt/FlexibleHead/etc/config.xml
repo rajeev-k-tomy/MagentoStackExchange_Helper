@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Rkt_FlexibleHead extension
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the MIT License
+ * that is bundled with this package in the file LICENSE_FH.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/mit-license.php
+ *
+ * @category       Rkt
+ * @package        Rkt_FlexibleHead
+ * @copyright      Copyright (c) 2015   
+ * @license        http://opensource.org/licenses/mit-license.php MIT License
+ */ 
+-->
+<config>
+    <modules>
+        <Rkt_FlexibleHead>
+            <version>1.0.0</version>
+        </Rkt_FlexibleHead>
+    </modules>
+    <global>
+        <blocks>
+            <rkt_flexiblehead>
+                <class>Rkt_FlexibleHead_Block</class>
+            </rkt_flexiblehead>
+        </blocks>
+        <helpers>
+            <rkt_flexiblehead>
+                <class>Rkt_FlexibleHead_Helper</class>
+            </rkt_flexiblehead>
+        </helpers>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <rkt_flexiblehead>
+                    <file>rkt_flexiblehead.xml</file>
+                </rkt_flexiblehead>
+            </updates>
+        </layout>
+    </frontend>
+</config>

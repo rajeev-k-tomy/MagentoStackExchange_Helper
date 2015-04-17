@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Rkt_FlexibleHead extension
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the MIT License
+ * that is bundled with this package in the file LICENSE_FH.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/mit-license.php
+ *
+ * @category       Rkt
+ * @package        Rkt_FlexibleHead
+ * @copyright      Copyright (c) 2015   
+ * @license        http://opensource.org/licenses/mit-license.php MIT License
+ */ 
+-->
+<layout>
+	<default>
+		<reference name="head">
+			<block type="rkt_flexiblehead/page_html_head" name="flexiblehead" as="flexiblehead"></block>
+		</reference>
+	</default>
+
+	<!--
+	/**
+	 * This example shows how can you use the flexiblehead block in some pages.
+	 * 
+	 * In this case, if you uncomment this, then `css/rkt_flexiblehead/example.css` and 
+	 * `js/rkt_flexiblehead/example.js` will get added in the product view page only
+	 */
+	<catalog_product_view>
+		<reference name="flexiblehead">
+			<action method="addItem"><type>skin_css</type><item>css/rkt_flexiblehead/example.css</item></action>
+			<action method="addItem"><type>skin_js</type><item>js/rkt_flexiblehead/example.js</item></action>
+		</reference>
+	</catalog_product_view>-->
+</layout>

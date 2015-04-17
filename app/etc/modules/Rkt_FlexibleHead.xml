@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Rkt_CustomerSupport extension
+ * 
+ * NOTICE OF LICENSE
+ * 
+ * This source file is a part of a paid extension. You cannot sell the code base without acknowledging the developer team of this extension. You are free to edit the code base once you have purchased this extension. 
+ * 
+ * For more details, have look into the reference url provided with this file.
+ * 
+ * @category       Rkt
+ * @package        Rkt_CustomerSupport
+ * @copyright      Copyright (c) 2015
+ * @license        http://www.rktinaction.com/support
+ */
+-->
+<config>
+    <modules>
+        <Rkt_FlexibleHead>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends>
+                <Mage_Core />
+             </depends>
+        </Rkt_FlexibleHead>
+    </modules>
+</config>
