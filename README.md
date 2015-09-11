@@ -1,27 +1,11 @@
-# MagentoStackExchange_Helper
-This repository is used to holds code/extensions which I used for answering in @stackMagento.
+# Rkt_CmsPageToProduct
 
-This repository holds multiple branches. Each of those branches will hold different contents. These contents may be code snippets, extensions or anything. Every branches are constructed for future references.
+This extension is used to convert a CMS Page to Product Page.
 
-# Extensions Available
-## Rkt_CustomBlock 
-This is a simple magento extension which is used to illustrate how can we create a custom block in Magento. Tested in `Magento-1.9.1`.
+## Theory
 
-SO Question Reference : **[creating block not working](http://magento.stackexchange.com/questions/56396/creating-block-not-working/)**
+It uses an observer cms_page_render to do this trick. The only change that you need to do here is replace `CMS_PAGE_IDENTIFIER` with your cms page identifier and `PRODUCT_ID` with id of product that you need to show in Cms page. These two constants you can find inside the observer class `Rkt_CmsPageToProduct_Model_Observer`
 
-## Rkt_FlexibleHead
-In most of the cases, it is impossible to include a `page/html_head type` block inside head block (which is also a `page/html_head type` block). Using this extension, you can use a custom block `rkt_flexeblehead/page_html_head` block type in your layout file which has all of the power of `page/html_head` type block, but without causing any problems.
+## Reference
 
-SO Question Reference : **[Error when adding a block in page.xml](http://magento.stackexchange.com/questions/63726/error-when-adding-a-block-in-page-xml/63742#63742)**.
-
-## Rkt_RemoveCategoryTab
-This extension is used to remove a tab from cateogry edit section in admin side of Magento. This module can be used to study how magento is processing an admin event.
-
-SO Question Reference : **[have a look on this thread](http://magento.stackexchange.com/questions/63913/remove-the-category-product-from-category-edit/63920#63920)**
-
-## ITEP_Incomm
-This is a simple magento extension which is used to illustrate how can we create a custom block in Magento. Tested in `Magento-1.8`.
-
-SO Question Reference : **[New block in custom module from controller not loading](http://magento.stackexchange.com/questions/69161/new-block-in-custom-module-from-controller-not-loading/69162?noredirect=1#69161)**
-
-
+[Customizing a product page using view.phtml doesn't pull images](http://magento.stackexchange.com/questions/80745/customizing-a-product-page-using-view-phtml-doesnt-pull-images/80754#80754)

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Rkt_CmsPageToProduct>
+			<active>true</active>
+			<codePool>community</codePool>
+			<depends>
+				<Mage_Cms />
+				<Mage_Catalog />
+			</depends>
+		</Rkt_CmsPageToProduct>
+	</modules>
+</config>

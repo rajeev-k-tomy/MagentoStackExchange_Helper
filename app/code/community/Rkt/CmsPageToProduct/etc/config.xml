@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Rkt_CmsPageToProduct>
+			<version>1.0.0</version>
+		</Rkt_CmsPageToProduct>
+	</modules>
+	<global>
+		<models>
+			<rkt_cmspagetoproduct>
+				<class>Rkt_CmsPageToProduct_Model</class>
+			</rkt_cmspagetoproduct>
+		</models>
+	</global>
+	<frontend>
+		<events>
+			<cms_page_render>
+		        <observers>
+		            <rkt_cmspagetoproduct>
+		                <class>rkt_cmspagetoproduct/observer</class>
+		                <method>convertToProductPage</method>
+		            </rkt_cmspagetoproduct>
+		        </observers>
+		    </cms_page_render>
+		</events>
+	</frontend>
+</config>
