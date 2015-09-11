@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Rkt_ForwardCategoryToProduct>
+			<version>1.0.0</version>
+		</Rkt_ForwardCategoryToProduct>
+	</modules>
+	<global>
+		<models>
+			<rkt_forwardcategorytoproduct>
+				<class>Rkt_ForwardCategoryToProduct_Model</class>
+			</rkt_forwardcategorytoproduct>
+		</models>
+	</global>
+	<frontend>
+		<events>
+			<controller_action_predispatch_catalog_category_view>
+		        <observers>
+		            <rkt_forwardcategorytoproduct>
+		                <class>rkt_forwardcategorytoproduct/observer</class>
+		                <method>forwardSingleProductCategory</method>
+		            </rkt_forwardcategorytoproduct>
+		        </observers>
+		    </controller_action_predispatch_catalog_category_view>
+		</events>
+	</frontend>
+</config>

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Rkt_ForwardCategoryToProduct>
+			<active>true</active>
+			<codePool>community</codePool>
+			<depends>
+				<Mage_Catalog />
+			</depends>
+		</Rkt_ForwardCategoryToProduct>
+	</modules>
+</config>
