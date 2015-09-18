@@ -33,3 +33,9 @@ SO Question Reference :
 - **[Thread 1](http://magento.stackexchange.com/questions/74895/mask-product-url-when-theres-only-one-available-in-category/82411#82411)**
 - **[Thread 2](http://magento.stackexchange.com/questions/82550/forward-category-page-to-product-view-page-not-working)**
 
+## ISN_Layouts
+Magento extension which adds a custom page layout. It also include page layout handle in category pages.
+reference
+
+SO Question Reference : **[Custom category layout not working](http://magento.stackexchange.com/questions/83453/custom-category-layout-not-working/)**
+
