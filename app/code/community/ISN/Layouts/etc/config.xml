@@ -1,0 +1,47 @@
+<config>
+    <modules>
+        <ISN_Layouts>
+            <version>0.0.1</version>
+        </ISN_Layouts>
+    </modules>
+    <global>
+        <models>
+            <isn_layouts>
+                <class>ISN_Layouts_Model</class>
+            </isn_layouts>
+        </models>
+        <helpers>
+            <isn_layouts>
+                <class>ISN_Layouts_Helper</class>
+            </isn_layouts>
+        </helpers>
+        <page>
+            <layouts>
+                <noanchor module="isn_layouts" translate="label">
+                    <label>Anchor Override</label>
+                    <template>page/3columns.phtml</template>
+                    <layout_handle>noanchor</layout_handle>
+                </noanchor>
+            </layouts>
+        </page>
+    </global>
+    <frontend>
+        <events>
+            <controller_action_layout_load_before>
+                <observers>
+                    <add_page_layout_handle>
+                        <class>isn_layouts/observer</class>
+                        <method>beforeLoadLayout</method>
+                    </add_page_layout_handle>
+                </observers>
+            </controller_action_layout_load_before>
+        </events>
+        <layout>
+            <updates>
+                <isn_layouts>
+                    <file>isn_layouts.xml</file>
+                </isn_layouts>
+            </updates>
+        </layout>
+    </frontend>
+</config>

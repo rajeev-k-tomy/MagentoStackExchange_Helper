@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <ISN_Layouts>
+	    <active>true</active>
+	      	<codePool>community</codePool>
+	      	<depends>
+	        	<Mage_Page />
+	        	<Mage_Catalog />
+	    	</depends>
+    </ISN_Layouts>
+  </modules>
+</config>
+
