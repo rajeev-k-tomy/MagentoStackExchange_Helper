@@ -5,9 +5,10 @@ class ISN_Layouts_Model_Observer
 	{
 		//get layouts
 		$layout = $observer->getEvent()->getLayout();
+		$action = $observer->getEvent()->getAction();
 
 		//make sure it is a category page.
-		if (Mage::registry('current_category')) {
+		if ($action->getFullActionName() == 'catalog_category_view') {
 
 			//get page layout code
 			$category = Mage::registry('current_category');
